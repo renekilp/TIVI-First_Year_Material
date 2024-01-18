@@ -21,6 +21,8 @@ print(area)
 
 
 
+
+
 #    boolean: totta vai tarua (pyhtonissa 1 tai 0)
 
 is_it_true = True
