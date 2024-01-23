@@ -36,3 +36,15 @@ while current_player <= player_count:
     current_player = current_player + 1
 print(f"Paras tulos: {best_result} ja  {best_player}")
 
+
+#   break komento heittää ylos aktiivisesta silmukasta. suoritus jatkuu koodilohkon jälkeen
+
+counter = 0
+
+while True: #   ikuinen silmukka
+    print(f"laskuri eka {counter}")
+    counter += 1
+    if counter == 5:
+        break # poistuu silmukan koodilohkosta samantien. alla oleva ei tulostu
+    print(f"Laskuri toka {counter}")
+
