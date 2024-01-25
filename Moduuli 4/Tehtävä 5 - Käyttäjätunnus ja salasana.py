@@ -4,7 +4,6 @@ right_pass = "rules"
 username_input = None
 password_input = None
 
-
 while username_input != right_usern or password_input != right_pass :
     username_input = input("Syötä käyttäjä tunnus:\n")
     password_input = input("Syötä salasana:\n")
