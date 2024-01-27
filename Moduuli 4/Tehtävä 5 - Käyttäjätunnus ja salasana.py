@@ -11,7 +11,7 @@ while username_input != right_usern or password_input != right_pass :
     if i == 5:
         print("Pääsy evätty.")
         break
-    if username_input == right_usern and password_input:
+    if username_input == right_usern and password_input == right_pass :
         print("Tervetuloa!")
 
 
