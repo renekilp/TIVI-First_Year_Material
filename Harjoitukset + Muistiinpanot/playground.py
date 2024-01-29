@@ -1,3 +1,4 @@
+"""""
 import random
 
 dice = random.randint(1,6)
@@ -47,4 +48,27 @@ while True: #   ikuinen silmukka
     if counter == 5:
         break # poistuu silmukan koodilohkosta samantien. alla oleva ei tulostu
     print(f"Laskuri toka {counter}")
+
+
+probabilities = [0.52, 0.49, 0.72, 0.81, 0.12, 0.11]
+prob_list = []
+
+for prob in probabilities:
+    if prob > 0.5:
+        prob_list.append(1)
+    if prob < 0.5:
+        prob_list.append(0)
+print(f'{prob_list}')
+
+"""""
+
+
+
+
+
+
+
+
+
+
 
