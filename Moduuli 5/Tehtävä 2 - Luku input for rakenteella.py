@@ -1,13 +1,12 @@
 number_list = []
 
 while True:
-    number_str = input("Syötä numero:\n")
-    if number_str == "":
+    number_input = input("Syötä numero (laita tyhjä rivi lopettaaksesi:\n")
+    if number_input == "":
         break
+    else:
+        number = int(number_input)
+        number_list.append(number)
 
-number = int(number_str)
-number_list.append(number)
 number_list.sort(reverse=True)
-
-print(number_list[:5])
- #  TEE LOPPUUN!
+print(f"Syöttämäsi numerot isoimmasta pienimpään:\n{number_list[:5]}")
