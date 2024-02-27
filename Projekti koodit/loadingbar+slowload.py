@@ -27,4 +27,4 @@ def slowly_generate_title(delay=0.25):
         time.sleep(delay)
 
 
-fakeloading()
+fakeloading()   #
