@@ -1,1 +1,1 @@
-This repository contains only python related notes, exercises and homework.
+This repository contains only python, css, html and javascript related notes, exercises and homework.
