@@ -82,3 +82,18 @@ for p in players:
 for p in players:
     p.print_info()
 
+
+class Player:
+    def __init__(self, name, race):
+        self.name = name
+        self.race = race
+
+    def __repr__(self):
+        return f"Tämän söpön pelaajan nimi on:\n{self.name}\nja hänen rotunsa on:\n{self.race} 😘"
+
+
+player1 = Player("Onni Monni", "Hobitti")
+player2 = Player("Joni Poni", "Haltija")
+
+print(player1)
+print(player2)
