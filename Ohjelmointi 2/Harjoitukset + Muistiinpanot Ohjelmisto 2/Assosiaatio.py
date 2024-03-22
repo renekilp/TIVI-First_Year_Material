@@ -1,3 +1,4 @@
+""""
 class School:
     def __init__(self, name):
         self.name = name
@@ -16,7 +17,7 @@ student2 = Student("Patrik", school2)
 
 print(f"{student1.name} is studying @ {student1.school.name}")
 print(f"{student2.name} is studying @ {student2.school.name}")
-
+"""
 
 class Book:
     def __init__(self, title):
@@ -43,10 +44,40 @@ library1.add_book(book1)
 library1.add_book(book3)
 library2.add_book(book2)
 
+"""
 print(f"{library1.name} kuuluvat kirjat:")
 for book in library1.books:
     print(book.title)
+"""
 
 
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+        self.courses = []
+
+    def enroll(self, course):
+        self.courses.append(course)
+        course.students.append(self)
 
 
+class Course:
+
+    def __init__(self, name):
+        self.name = name
+        self.students = []
+
+
+student1 = Student("Jarkko")
+student2 = Student("Joni")
+course1 = Course("Rekkakurssi")
+course2 = Course("Ponikurssi")
+
+student1.enroll(course1)
+student2.enroll(course1)
+student2.enroll(course2)
+
+
+for student in course2.students:
+    print(student.name)
