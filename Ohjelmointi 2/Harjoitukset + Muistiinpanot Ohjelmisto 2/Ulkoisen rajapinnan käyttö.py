@@ -24,9 +24,9 @@ def search_shows(search_term):
         print(f"HTTP-pyyte meni pieleen!")
         print(error)
 
-    except Exception as error:
-        print(f"HTTP-pyyte meni pieleen!")
-        print(error)
+    #except Exception as error:
+    #    print(f"HTTP-pyyte meni pieleen!")
+    #    print(error)
 
 
 search_input = input("Anna hakusana:\n")
