@@ -55,5 +55,5 @@ for _ in range(3):
     auto1.kulje(1)
     auto2.kulje(1)
 
-print(f"Sähköauton ajama matka\n{auto1.matka} km")
+print(f"Sähköauton ajama matka:\n{auto1.matka} km")
 print(f"Polttomoottoriauton ajama matka:\n{auto2.matka} km")
