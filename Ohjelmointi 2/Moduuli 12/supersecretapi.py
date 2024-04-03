@@ -1,1 +1,0 @@
-secret_api = "97d37276eaad33216914ac1806b9818d"
