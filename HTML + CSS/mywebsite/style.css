@@ -14,6 +14,22 @@ body{
     margin: 0em;
 }
 
+.base{
+    display: block;
+    margin: auto;
+    background-color: #09090a;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+    width: 80%;
+    overflow: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position:relative;
+    top: 4rem;
+
+}
+
 .navbar {
     padding: 0em;
     background-repeat: no-repeat;
@@ -27,24 +43,73 @@ body{
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 2.8em;
-    padding: 0.10em;
-    background-color: #000000;
+    font-size: 2.5em;
+    padding: 0.30em;
+    background-color: #09090a;
 }
 
 .navbar a:hover {
-    background-color: rgba(39, 39, 39, 0.99);
-    color: #727070;
+    background-color: #141416;
+    color: #312835;
 }
 
 .navbar header {
     display: block;
     margin: 0em;
-    background-color: black;
+    background-color: #09090a;
 }
 
+/* vvv HOMEPAGE EDITS vvv */
 
+.logo240{
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
 
+.hometitle{
+    text-align: center;
+    font-size: 5rem;
+    margin: 0rem;
+}
+
+.home h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 8rem;
+    margin: 3rem;
+}
+
+.home p{
+    text-align: center;
+    font-size: 25px;
+    padding:3rem;
+}
+
+.merchants{
+    display:block;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+#merchantcap{
+    text-align: center;
+}
+
+/* vvv PRODUCTS EDITS vvv */
+
+.productsbanner{
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.productstitle{
+    text-align: center;
+    font-size: 6rem;
+    text-decoration: underline;
+    margin: 0rem;
+}
 
 
 
