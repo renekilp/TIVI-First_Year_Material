@@ -1,5 +1,4 @@
 'use strict';
-
 const name = prompt('Syötä nimi:');
 console.log(name);
 
