@@ -65,3 +65,7 @@ newP.addEventListener('click', () =>{
 document.addEventListener('click', (event)=> {
   console.log('sivua klikattu!', event);
 })
+
+document.addEventListener('click', (event)=> {
+  console.log('Käyttäjä klikkasi', event.target, event.currentTarget.tagName);
+})
