@@ -13,12 +13,11 @@ document.getElementById('target').addEventListener('submit', (event) => {
             return response.json();
         })
         .then(data => {
-            // Clear previous results
             document.getElementById('results').innerHTML = '';
 
             const article = document.createElement('article');
             const jokeText = document.createElement('p');
-            jokeText.textContent = data.value; // Access the joke directly from 'value' property
+            jokeText.textContent = data.value;
             article.appendChild(jokeText);
             document.getElementById('results').appendChild(article);
         })
