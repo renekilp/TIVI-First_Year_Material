@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script defer src="js2.js"></script>
     <title>Tehtävä 2</title>
 </head>
 <body>
     <h1>Syötä haluttu sarja tai elokuva</h1>
-    <form action="https://api.tvmaze.com/search/shows">
+    <form id="searchForm">
         <input id="query" name="q" type="text">
         <input type="submit" value="Search">
     </form>
+    <div id="results"></div>
+    <script defer src="js2.js"></script>
 </body>
 </html>

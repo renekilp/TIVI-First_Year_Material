@@ -5,10 +5,12 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
 
   const inputValue = document.getElementById('query').value;
 
-  fetch('INSERT SIVU')
-    .then(response => reposponse.json())
+  fetch(`https://api.tvmaze.com/search/shows?q=${inputValue}`)
+    .then(response => response.json())
     .then(data => {
       console.log(data);
   })
-    .catch(error =>)
-}
+    .catch(error => {
+        console.log('There was an issue with the fetch operation.', error);
+    })
+});
