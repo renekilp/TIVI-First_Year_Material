@@ -28,13 +28,13 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
         detailsLink.target = '_blank';
         article.appendChild(detailsLink);
 
-        if (result.show.image) {
-          const imageSrc = result.show.image ? result.show.image.medium : 'https://via.placeholder.com/210x295?text=Not%20Found';
-          const image = document.createElement('img');
-          image.src = imageSrc;
-          image.alt = result.show.name;
-          article.appendChild(image);
-        }
+
+        const imageSrc = result.show.image ? result.show.image.medium : 'https://via.placeholder.com/210x295?text=Not%20Found';
+        const image = document.createElement('img');
+        image.src = imageSrc;
+        image.alt = result.show.name;
+        article.appendChild(image);
+
 
         const summaryDiv = document.createElement('div');
         summaryDiv.innerHTML = result.show.summary;
