@@ -4,6 +4,6 @@ fetch('https://api.chucknorris.io/jokes/random')
     .then(response =>{
         return response.json();
     })
-    .then(data =>{
-        console.log(data.value);
+    .then(joke =>{
+        console.log(joke.value);
     })
