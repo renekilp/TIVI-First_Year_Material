@@ -12,12 +12,12 @@ document.getElementById('target').addEventListener('submit', (event) => {
             }
             return response.json();
         })
-        .then(data => {
+        .then(joke => {
             document.getElementById('results').innerHTML = '';
 
             const article = document.createElement('article');
             const jokeText = document.createElement('p');
-            jokeText.textContent = data.value;
+            jokeText.textContent = joke.value;
             article.appendChild(jokeText);
             document.getElementById('results').appendChild(article);
         })
