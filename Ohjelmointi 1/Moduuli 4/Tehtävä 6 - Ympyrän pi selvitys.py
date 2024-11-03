@@ -13,3 +13,5 @@ while N < 10 :
 pi = 4 * n / N
 print(f"Pisteitä yhteensä {N}, joista ympyrän sisällä {n}")
 print(f"Piin likiarvo on:\n{pi}")
+
+# hihi 

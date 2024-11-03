@@ -76,6 +76,9 @@ def find_min(a, b, c):
 
 if __name__ == "__main__":
 
+#   loppu puuttuu
+##############################
+
 
 
 
