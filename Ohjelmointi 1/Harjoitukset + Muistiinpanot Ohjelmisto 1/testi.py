@@ -1,45 +1,44 @@
-katkoviiva = "-"
-print(katkoviiva * 80 + "\n Minun nimeni on René." + "\n" + katkoviiva * 80)
+class Työntekijä:
 
-#   -----------------------------------------------------
+    työntekijöiden_lukumäärä = 0
 
-luku = 3
-print("Minä asun osoitteessa " + str(luku))
-print(f"Minä asun osoitteessa {luku}")
+    def __init__(self, etunimi, sukunimi):
+        Työntekijä.työntekijöiden_lukumäärä = Työntekijä.työntekijöiden_lukumäärä + 1
+        self.työntekijänumero = Työntekijä.työntekijöiden_lukumäärä
+        self.etunimi = etunimi
+        self.sukunimi = sukunimi
 
-#   -----------------------------------------------------
+    def tulosta_tiedot(self):
+        print(f"{self.työntekijänumero}: {self.etunimi} {self.sukunimi}")
 
-sentti = 2.54
+class Tuntipalkkainen(Työntekijä):
 
-user_input = input("Syötä pituus tuumana: \n")
-user_int = int(user_input)
-new_value = sentti * user_int
-print("Pituus senttimetreinä: \n" + str(new_value) + " cm")
-
-#   -----------------------------------------------------
-
-#   5f, 10.2f, <20s, 8d
-
-#   import math / esim print(math.pi) / from math import pi
-import math
-munpi = math.pi
-print(f'{munpi:10.5f}') #   10 (meinaa riviä). 5(meinaa desimaalia)f
-
-luku = 10
-print(f"{luku: 10d}") # 10 rivi
-
-#   -----------------------------------------------------
+    def __init__(self, etunimi, sukunimi, tuntipalkka):
+        super().__init__(etunimi, sukunimi)
+        self.tuntipalkka = tuntipalkka
 
 
-#rahat = float(input("Anna rahamäärä: "))
+    def tulosta_tiedot(self):
+        super().tulosta_tiedot()
+        print(f" Tuntipalkka: {self.tuntipalkka}")
+
+class Kuukausipalkkainen(Työntekijä):
+
+    def __init__(self, etunimi, sukunimi, kuukausipalkka):
+        super().__init__(etunimi, sukunimi)
+        self.kuukausipalkka = kuukausipalkka
 
 
-#   -----------------------------------------------------
+    def tulosta_tiedot(self):
+        super().tulosta_tiedot()
+        print(f" Kuukausipalkka: {self.kuukausipalkka}")
 
-luku = 11
 
-if luku < 9:
-    print("hello")
-print("moi")
+työntekijät = []
+työntekijät.append(Tuntipalkkainen("Viivi", "Virta", 12.35))
+työntekijät.append(Kuukausipalkkainen("Ahmed", "Habib", 2750))
+työntekijät.append(Työntekijä("Pekka", "Puro"))
+työntekijät.append(Tuntipalkkainen("Olga", "Glebova", 14.92))
 
-#  --------------------------------------------------
+for t in työntekijät:
+    t.tulosta_tiedot()

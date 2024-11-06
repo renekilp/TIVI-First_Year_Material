@@ -27,3 +27,7 @@ plt.plot(x, z, label="$y = 3x - 5$")
 plt.legend()
 
 plt.show()
+
+
+print("Hello World!")
+
