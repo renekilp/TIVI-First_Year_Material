@@ -4,14 +4,14 @@ x = np.linspace(-5, 5, 100)
 y = x**2
 z = 2*x-4
 
-ax=plt.subplot()
+ax = plt.subplot()
 
-ax.spines['left'].set_position(('data',0))
-ax.spines['bottom'].set_position(('data',0))
+ax.spines['left'].set_position(('data', 0))
+ax.spines['bottom'].set_position(('data', 0))
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
 
-# samat mittasuhteet
+# smart mittasuhteet
 ax.set_aspect('equal')
 
 # x-akselin säätöä
@@ -27,7 +27,3 @@ plt.plot(x, z, label="$y = 3x - 5$")
 plt.legend()
 
 plt.show()
-
-
-
-
